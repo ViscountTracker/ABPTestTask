@@ -1,0 +1,67 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/*The CSS code you provided appears to be a set of styles targeting various elements and classes commonly used in web applications. Let's go through each section and explain what it does:
+
+.navbar-brand: Styles the anchor element used as the branding logo or name in the navigation bar. The styles applied ensure that the text wraps properly and breaks at word boundaries.
+
+a: Applies styles to all anchor elements, setting the color to #0077cc, which is a shade of blue commonly used for links.
+
+.btn-primary: Styles the primary button with a white text color, a background color of #1b6ec2, and a border color of #1861ac. This creates a button with blue background and white text.
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link: Styles the active or selected link in a navigation pills component. It sets the text color to white, background color to #1b6ec2, and border color to #1861ac, providing visual emphasis on the active link.
+
+.border-top and .border-bottom: Applies a 1px solid border on the top and bottom of the elements with these classes, respectively. These classes are useful for adding borders to specific sections or dividers in your layout.
+
+.box-shadow: Adds a box shadow effect to the elements with this class. It gives a subtle shadow to create a visual separation between the element and the underlying content.
+
+button.accept-policy: Styles the accept-policy button with a font size of 1rem and line-height set to inherit. This class can be used to target a specific button element in your layout.
+
+.footer: Styles the footer section of the page. It sets the position to absolute, anchors it to the bottom of the page, and sets a fixed line height of 60px. This is commonly used for sticky footers.
+
+These styles are intended to be applied to HTML elements or classes within your web application's layout and can be customized to match your specific design requirements. You can include this CSS code in your site.css file and reference it in your project to apply the styles accordingly.*/
