@@ -14,7 +14,6 @@ namespace ABPTestTask.Controllers
         {
             _experimentRepository = experimentRepository;
         }
-
         [HttpGet]
         public ActionResult<IEnumerable<ExperimentStatistics>> GetStatistics()
         {
@@ -23,4 +22,4 @@ namespace ABPTestTask.Controllers
         }
     }
 }
-}
+

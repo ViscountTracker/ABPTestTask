@@ -4,12 +4,10 @@ using RouteAttribute = Microsoft.AspNetCore.Components.RouteAttribute;
 
 namespace ABPTestTask.Controllers
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    [Route("experiment")]
+
+    [Route("api/experiment")]
     [ApiController]
-    public class ExperimentController : ControllerBase//TODO: FIX BUGS
+    public class ExperimentController : ControllerBase
     {
         private readonly IExperimentRepository _experimentRepository;
 
@@ -17,23 +15,18 @@ namespace ABPTestTask.Controllers
         {
             _experimentRepository = experimentRepository;
         }
+
     }
 
     //TODO: Fix bugs in this code.
-    /// <summary>
-    ///
-    /// </summary>
-    /// <param name="expirementKey"></param>
-    /// <param name="deviceTekon"></param>
-    /// <returns></returns>
     [HttpGet("experiment")]
-    public ActionResult<Experiment> GetExperiment(string expirementKey, [FromQuery] string deviceTekon) 
+    public ActionResult<Experiment> GetExperiment(string expirementKey, [FromQuery] string deviceToken) 
     {
-        var experiment = _experimentRepository.GetExperiment(experimentKey, deviceToken);
+        var experiment = _experimentRepository.GetExperiment(expirementKey, deviceToken);
         if (experiment == null)
         {
             // Create new experiment for the device token
-            var newExperiment = _experimentRepository.CreateExperiment(experimentKey, deviceToken);
+            var newExperiment = _experimentRepository.CreateExperiment(expirementKey, deviceToken);
             return Ok(newExperiment);
         }
         else
@@ -41,5 +34,4 @@ namespace ABPTestTask.Controllers
             return Ok(experiment);
         }
     }
-
 }
