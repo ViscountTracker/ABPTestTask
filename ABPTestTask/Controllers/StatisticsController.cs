@@ -8,7 +8,7 @@ namespace ABPTestTask.Controllers
     [ApiController]
     public class StatisticsController : ControllerBase
     {
-        private readonly IExperimentRepository _experimentRepository;//TODO:Fix bugs
+        private readonly IExperimentRepository _experimentRepository;
 
         public StatisticsController(IExperimentRepository experimentRepository)
         {

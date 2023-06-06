@@ -5,7 +5,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 /////////////////////////////////////////////////////////////////////////////////////////
-public void ConfigureServices(IServiceCollection services)//TODO: Fix bugs 
+static void ConfigureServices(IServiceCollection services)//TODO: Fix bugs generete Database connection 
 {
     services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

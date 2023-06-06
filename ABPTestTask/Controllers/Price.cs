@@ -3,9 +3,9 @@
 namespace ABPTestTask.Controllers
 {
     public class Price
-    {
+    {   //TODO: create "context" this method responsible for conection DB
         [HttpGet("price")]
-        public ActionResult<Experiment> GetPriceExperiment(string deviceToken)
+        public ActionResult<Experiment> GetPriceExperiment(string deviceToken)//DB connection 
         {
             var experiment = _context.Experiments
                 .FirstOrDefault(e => e.DeviceToken == deviceToken && e.Key == "price");
