@@ -29,3 +29,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+/*
+Todo list on today
+1) Create new DB
+2) Add connection DB
+3) Add try catch
+4) Halding method OK()
+5) Extantion halding
+6) Create frontend 
+*/
